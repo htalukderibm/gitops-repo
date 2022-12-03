@@ -1,0 +1,6 @@
+"command": "echo 'helloworld'"
+"image":
+  "repository": "registry.access.redhat.com/ubi8/ubi"
+  "tag": "latest"
+"replicaCount": 1
+
