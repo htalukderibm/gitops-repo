@@ -1,0 +1,36 @@
+bootstrap:
+  argocd-config:
+    project: 0-bootstrap
+    repo: github.com/htalukderibm/gitops-repo
+    url: https://github.com/htalukderibm/gitops-repo
+    path: argocd/0-bootstrap
+infrastructure:
+  argocd-config:
+    project: 1-infrastructure
+    repo: github.com/htalukderibm/gitops-repo
+    url: https://github.com/htalukderibm/gitops-repo
+    path: argocd/1-infrastructure
+  payload:
+    repo: github.com/htalukderibm/gitops-repo
+    url: https://github.com/htalukderibm/gitops-repo
+    path: payload/1-infrastructure
+services:
+  argocd-config:
+    project: 2-services
+    repo: github.com/htalukderibm/gitops-repo
+    url: https://github.com/htalukderibm/gitops-repo
+    path: argocd/2-services
+  payload:
+    repo: github.com/htalukderibm/gitops-repo
+    url: https://github.com/htalukderibm/gitops-repo
+    path: payload/2-services
+applications:
+  argocd-config:
+    project: 3-applications
+    repo: github.com/htalukderibm/gitops-repo
+    url: https://github.com/htalukderibm/gitops-repo
+    path: argocd/3-applications
+  payload:
+    repo: github.com/htalukderibm/gitops-repo
+    url: https://github.com/htalukderibm/gitops-repo
+    path: payload/3-applications
