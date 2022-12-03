@@ -1,0 +1,15 @@
+"acceptLicense": true
+"componentName": "embedded"
+"imagePullSecrets":
+- "ibm-entitlement-key"
+"models":
+- "image": "watson-nlp_syntax_izumo_lang_en_stock:1.0.6"
+  "registry": "watson"
+"registries":
+- "name": "watson"
+  "url": "cp.icr.io/cp/ai"
+"runtime":
+  "image": "watson-nlp-runtime:1.0.18"
+  "registry": "watson"
+"serviceType": "ClusterIP"
+
