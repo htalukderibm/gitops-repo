@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: namespace-htalukder-deployer
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: 1-infrastructure
+  source:
+    path: payload/1-infrastructure/namespace/htalukder-deployer/namespace
+    repoURL: https://github.com/htalukderibm/gitops-repo
+    targetRevision: main
+    helm:
+      valueFiles:
+        - values.yaml
+      releaseName: htalukder-deployer
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []
